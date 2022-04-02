@@ -1,0 +1,495 @@
+/*-----------------------------POLICE PERSONNALISEE-----------------------------*/
+
+@font-face {
+    font-family: Bebas;
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+  
+@font-face {
+  font-family: Lemon;
+  src: url(fonts/LEMONMILK-Medium.otf);
+}
+
+@font-face {
+  font-family: Lemon;
+  src: url(“fonts/Roboto_Regular.ttf”);
+  font-weight : normal;
+  font-style : normal;
+}
+
+@font-face {
+  font-family: Lemon;
+  src: url(“fonts/LEMO.ttf”);
+  font-weight : normal;
+  font-style : normal;
+}
+  
+@font-face {
+    font-family: “Roboto”;
+    src: url(“fonts/Roboto_Regular.ttf”);
+    font-weight : normal;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: “Roboto”;
+    src: url(“fonts/Roboto_Black”);
+    font-weight : bold;
+    font-style : normal;
+}    
+
+@font-face {
+    font-family: “Roboto”;
+    src: url(“fonts/Roboto_Thin.ttf”);
+    font-weight : lighter;
+    font-style : normal;
+}
+
+
+
+/*-----------------------------PROPRIETES GENERALES-----------------------------*/
+*
+{  
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    /*background-color: rgb(233, 243, 243);*/
+    background-color: rgb(221, 242, 242);
+}
+
+header
+{
+    background: url(images/fondu_8bit.png) no-repeat center / cover;
+}
+
+
+
+/*-----------------------------MENU DE NAVIGATION-----------------------------*/
+nav * 
+{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav
+{
+    background-color: rgba(7, 20, 34, 0);
+    height: 80px;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+/*bouton home*/
+.nav_logo
+{
+    height: 120px;
+    padding: 10px;
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.nav_logo img
+{
+    height: 100%;
+}
+
+/*Menu de navigation*/
+nav ul
+{
+    float: right;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
+nav ul li 
+{
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 5px;
+}
+
+nav ul li a 
+{
+    color: white;
+    font-size: clamp(1rem, 1.75vw , 2.5rem);
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+nav a 
+{
+    transition: all .2s ease-in-out;
+}
+
+.active
+{
+    background-color: rgb(132, 0, 255);
+}
+
+/*hover*/
+nav a:hover
+{
+    background-color: rgb(132, 0, 255);
+}
+
+.nav_logo a:hover
+{
+    background-color:unset;
+}
+
+/*Burger menu bouton*/
+.check_btn
+{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+
+    cursor: pointer;
+    display: none;
+}
+
+#check
+{
+    display: none;
+}
+
+
+
+/*-----------------------------HERO SECTION-----------------------------*/
+.hero_sans_flow
+{
+    width: 100%;
+    margin-top: 8vw;
+    margin-bottom: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_sans_flow img
+{
+    width: 80%;
+}
+
+
+
+/*-----------------------------SECTION PRINCIPALE-----------------------------*/
+.main_section_panel
+{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_illustration
+{
+    width: 40%;
+}    
+
+.main_illustration img
+{
+    width: 100%;
+}    
+
+.main_text
+{
+    background-color: rgba(165, 42, 42, 0);
+    width: 50%;
+    max-width: 700px ;
+}
+
+.main_text h1
+{
+    font-family: Lemon ,Arial, Helvetica, sans-serif;
+    font-size: clamp(1.5rem, 5vw , 4.5rem);
+   
+}
+
+.main_text p
+{
+    font-family: Roboto ,Arial, Helvetica, sans-serif;
+    font-size: clamp(1rem, 3vw , 3rem);
+}
+
+
+
+
+.main_section_button
+{
+    margin-top: clamp(0.75rem, 3vw , 2rem);
+}
+
+.main_section_button a
+{
+    font-family: Bebas, Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: clamp(1rem, 3vw , 3rem);
+    background-color: rgb(83, 219, 94);
+
+    padding: 0.5rem;
+    padding-left: 2rem ;
+    padding-right: 2rem;
+    border-radius: 100rem;
+  
+    transition: all .2s ease-in-out;
+}
+
+.main_section_button a:hover
+{
+    color: white;
+    background-color: rgb(132, 0, 255);
+    box-shadow: 0px 5px 0 rgb(72, 0, 139);
+}
+
+
+/*specifique activités informatiques*/
+#activités_informatique h1, #activités_informatique p
+{
+    text-align: right;
+}
+
+#activités_informatique .main_section_button
+{
+    display: flex;
+    justify-content: end;
+}
+
+
+
+/*-----------------------------PIED DE PAGE-----------------------------*/
+footer
+{
+    font-family: Roboto ,Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    color: #EEF2F4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-image: linear-gradient(45deg, rgb(132, 0, 255) 20%, rgb(1, 245, 151));
+
+    margin-top: 15vw;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/*FICHE CONTACT*/
+#contact a em:hover
+{
+    transition: all .1s ease-in-out;
+}
+
+#contact a em:hover
+{
+    text-shadow: 1px 1px 0px rgb(155, 4, 255);
+}
+
+
+/*Ajustement footer*/
+footer h1
+{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+footer em , footer a 
+{
+    color: white;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+}
+
+footer li
+{
+    margin-top: 0.25rem;
+}
+
+
+/*FICHE RESEAUX SOCIAUX*/
+.socials ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials ul li 
+{
+    margin-right: 0.5rem;
+}
+
+.socials img
+{
+    /*scale: 0.6;*/
+    width: 80%;
+    transition: all .2s ease-in-out;
+}
+
+.socials img:hover
+{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------MEDIA QUERIES-----------------------------*/
+/*pour économiser de la place avec le menu classique*/
+@media (max-width : 952px) 
+{
+    .nav_logo
+    {
+        padding-left: 10px;
+        height: 80px; /*annulation pour la taille du logo*/
+    }
+
+    nav ul li a 
+    {
+        font-size: 16px;
+    }
+
+    nav ul 
+    {
+        padding-top: 0;
+    }
+
+
+    /*Pied de page*/
+    footer 
+    {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    footer div 
+    {
+        margin-bottom: 4rem;
+    }
+}
+
+
+
+
+
+/*passage au menu burger*/
+@media (max-width : 850px) 
+{
+    .check_btn
+    {
+        display: block;
+    }
+
+    nav
+    {
+        background-color: rgba(7, 20, 34, 0.644);
+    }
+
+    nav ul
+    {
+        position: absolute; 
+        top: 80px;
+        left: -100%; 
+        transition: all .5s ease-in-out;
+        
+        width: 100%;
+        height: calc(100vh - 80px);
+        text-align: center;
+        background-color: rgba(39, 39, 39, 0.822);
+    }
+
+    nav ul li
+    {
+        display: block;
+
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #check:checked ~ ul 
+    {
+        left: 0;
+    }
+}
+
+
+
+
+
+@media (max-width : 395px) /*problèmes petits écrants*/
+{
+    #activités_informatique h1 
+    {
+        font-size: 1.3rem
+    }
+} 
+
+
+
+
+
+
+
+
+
+/*-----------------------------MESSAGE TRAVAUX-----------------------------*/
+#alerte_travaux
+{
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -60vh;
+    margin-bottom: 20%;
+}
+
+.alerte_travaux_texte
+{
+    width: 80%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.alerte_travaux_texte h1
+{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.header_travaux
+{
+    height: 100vh;
+}
+
