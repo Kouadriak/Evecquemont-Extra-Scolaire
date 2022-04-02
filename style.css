@@ -169,7 +169,7 @@ nav a:hover
 }
 
 /*logo_burger_menu_local*/
-#horizontal_nav label li 
+nav label 
 {
     height: 80px;
     box-sizing: border-box;
@@ -179,7 +179,7 @@ nav a:hover
     margin-right: -10px;
 }
 
-#horizontal_nav label li img
+nav label img 
 {
     height: 100%;
 }
