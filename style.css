@@ -168,6 +168,22 @@ nav a:hover
     display: none;
 }
 
+/*logo_burger_menu_local*/
+#horizontal_nav label li 
+{
+    height: 80px;
+    box-sizing: border-box;
+    padding-top: 17px;
+    padding-bottom: 17px;
+
+    margin-right: -10px;
+}
+
+#horizontal_nav label li img
+{
+    height: 100%;
+}
+
 
 
 /*-----------------------------HERO SECTION-----------------------------*/
