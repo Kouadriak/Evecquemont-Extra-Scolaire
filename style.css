@@ -365,7 +365,7 @@ footer li
 
 /*-----------------------------MEDIA QUERIES-----------------------------*/
 /*pour économiser de la place avec le menu classique*/
-@media (max-width : 952px) 
+@media all and (max-width : 952px) 
 {
     .nav_logo
     {
@@ -403,7 +403,7 @@ footer li
 
 
 /*passage au menu burger*/
-@media (max-width : 850px) 
+@media all and (max-width : 850px) 
 {
     .check_btn
     {
@@ -446,7 +446,7 @@ footer li
 
 
 
-@media (max-width : 395px) /*problèmes petits écrants*/
+@media all and (max-width : 395px) /*problèmes petits écrants*/
 {
     #activités_informatique h1 
     {
